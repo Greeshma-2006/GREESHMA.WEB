@@ -1,0 +1,97 @@
+/* Basic styles for the calculator page */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e72fc, #ad1deb);
+    color: #fff;
+    }
+    
+    .calculator {
+    width: 320px;
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    }
+    
+    /* Header Styles */
+    .calculator-header {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+    
+    /* Display Styles */
+    .calculator-display {
+    height: 70px;
+    padding: 0 20px;
+    background: #000;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    }
+    
+    /* Buttons Styles */
+    .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    }
+    
+    .btn {
+    height: 70px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    
+    .btn.number {
+    background: #444;
+    }
+    
+    .btn.number:hover {
+    background: #555;
+    }
+    
+    .btn.operator {
+    background: #f57c00;
+    }
+    
+    .btn.operator:hover {
+    background: #fb8c00;
+    }
+    
+    .btn.function {
+    background: #757575;
+    }
+    
+    .btn.function:hover {
+    background: #888;
+    }
+    
+    .btn.wide {
+    grid-column: span 2;
+    }
+    
+    /* Button Active Effect */
+    .btn:active {
+    transform: scale(0.95);
+    }
+    
